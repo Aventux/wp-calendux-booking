@@ -100,4 +100,15 @@ class Calendux_Booking_Public {
 
 	}
 
+    function calendux_booking_widget() {
+        $options = get_option( $this->plugin_name );
+        $slug = (!empty($options['identification_token']) ? $options['identification_token'] : 'aventux');
+
+        return '
+<!-- Calendar Button-Widget Start -->
+<script src="https://cdn.calendux.net/calendar/widget.js"></script>
+<a href=" http://booking.buchungssystem.test/company/' . $slug . '" class="booking-btn" style="background-color: #563d7c; background-color: #563d7c; color: #ffffff" target="_blank">Jetzt buchen</a>
+<!-- Calendar Button-Widget End -->
+        ';
+    }
 }
