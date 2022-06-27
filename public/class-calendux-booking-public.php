@@ -111,4 +111,16 @@ class Calendux_Booking_Public {
 <!-- Calendar Button-Widget End -->
         ';
     }
+
+    function calendux_booking_iframe()
+    {
+        $options = get_option( $this->plugin_name );
+        $slug = (!empty($options['identification_token']) ? $options['identification_token'] : 'aventux');
+
+        return '
+<!-- Calendux iFrame Start -->
+<iframe src="https://booking.calendux.net/company/' . $slug . '" width="100%" height="720"></iframe>
+<!-- Calendux iFrame End -->
+        ';
+    }
 }

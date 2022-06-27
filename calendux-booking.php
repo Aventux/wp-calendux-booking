@@ -16,7 +16,7 @@
  * Plugin Name:       Calendux Booking
  * Plugin URI:        https://calendux.net/
  * Description:       Dies ist das offizelle Plugin von dem Calendux Buchungssystem.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Aventux
  * Author URI:        https://aventux.com
  * License:           GPL-2.0+

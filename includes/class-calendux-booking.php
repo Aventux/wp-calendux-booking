@@ -184,6 +184,7 @@ class Calendux_Booking {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
         $this->loader->add_shortcode( "calendux-booking-widget", $plugin_public, "calendux_booking_widget", $priority = 10, $accepted_args = 2 );
+        $this->loader->add_shortcode( "calendux-booking-iframe", $plugin_public, "calendux_booking_iframe", $priority = 10, $accepted_args = 2 );
 	}
 
 	/**
